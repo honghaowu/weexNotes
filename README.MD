@@ -49,16 +49,19 @@
     - 之前在安装过程中，出现报错：  
     index.web.js from UglifyJs<br>Unexpected token: punc ()) [index.web.js:752,18]，
     按照官网重新走了一遍，这次用npm,之前用的是cnpm，没有报错。
-    http://weex.apache.org/cn/guide/set-up-env.html
+    [weex官网](http://weex.apache.org/cn/guide/set-up-env.html)
+    [weex官网](http://weex.apache.org/cn/guide/)
 ## 1.5 weex init 搭建开发环境
     - weex init myweex
     - cd myweex
     - npm install 
     - npm run dev
     - npm run serve
-## 1.6 weex组建
+## 1.6 weex组件
     - css布局：
-        1.flex,不支持float和百分比  
-        2.不支持background的复合写法，包括border,margin,padding的复合写法，需要分开写border-left-style,border-left-color,border-left-width
-        3.单位px,不支持rem,em,pt，但是这里的px会根据屏幕适应，类似小程序中的rpx
-
+        1.flex,不支持float和百分比    
+        2.不支持background的复合写法，包括border,margin,padding的复合写法，需要分开写border-left-style,border-left-color,border-left-width  
+        3.单位px,不支持rem,em,pt，但是这里的px会根据屏幕适应，类似小程序中的rpx  
+    - template：
+        1.只能用div作为最外层的模板标签，和vue一样。
+        2.text：渲染文字,不能直接写在div中，也不能用text直接作为标签选择器写样式，要起类名。*lines:1;表示一行，超出显示...*
