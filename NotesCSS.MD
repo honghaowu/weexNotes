@@ -9,9 +9,9 @@
       border-top-right-radius {length}：，非负值, 默认值 0   
   **注意： Weex 对于长度值目前只支持像素值，不支持相对单位（em、rem）。    
         Weex 盒模型的 box-sizing 默认为 border-box，即盒子的宽高包含内容、内边距和边框的宽度，不包含外边距的宽度。**
-### Flex布局
+### Flex布局  
   Flexbox 包含 flex 容器和 flex 成员项，
-#### flex容器 
+#### flex容器    
   1. 在Weex 中，Flexbox 是默认且唯一的布局模型，所以你不需要手动为元素添加 display: flex; 属性。   
   2. flex-direction主轴的排列方向，默认column,row/column;注意,在一般的前端flex布局中，默认是row.  
   3. justify-content，flex成员项在主轴上的排列，flex-start:左对齐，flex-end:右对齐，enter:居中对齐，space-between：两端对齐，space-around:两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
@@ -20,5 +20,17 @@
      flex-start:上对齐；  
      flex-end: 下对齐，  
      center：中间对齐。
-#### flex成员项
+#### flex成员项  
   flex:1;平分空间
+### 定位position：
+  - relative 是默认值，指的是相对定位；
+  - absolute 是绝对定位，以元素的容器作为参考系；
+  - fixed 保证元素在页面窗口中的对应位置显示；
+  - sticky 指的是仅当元素滚动到页面之外时，元素会固定在页面窗口的顶部。
+### transform支持如下：
+  translate( [, ]?)/translateX( )/translateY( )/scale( )/scaleX( )/scaleY( )/rotate( )/rotateX( ) v0.14+/rotateY( ) v0.14+/perspective( ) Android 4.1及以上版本支持 v0.16+/transform-origin: number/percentage/keyword(top/left/right/bottom)
+### transition 
+  transition-property：过渡的属性  
+  transition-duration:指定transition过渡的持续时间 
+  transition-delay： 延迟时间  
+  transition-timing-function： 过渡的曲线：
