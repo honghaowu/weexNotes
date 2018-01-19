@@ -1,6 +1,7 @@
 
 ## [1.通用样式](#1)
 ## [2.文本样式](#2)
+## [3.单位](#3)
 ## <h2 id="1">1.通用样式</h2>
 ### 盒模型
   1. padding margin要分写,如：padding-left/margin-left   
@@ -47,3 +48,6 @@
 适用于text和input组件中的文本    
 *color<br>font-size<br>font-weight<br>font-style<br>text-align<br>text-decoration<br>text-overflow*  
 > **lines:number;仅在<text> 组件中支持。默认值是 0 代表不限制行数。,例如设为3.则表示显示3行，超出部分，显示省略号**
+## <h2 id="3">3.单位</h2>
+  * 颜色color：#fff/#ffffff/red/rgba()/rgb()/transparent
+  * 长度单位，只支持px,不支持rem,em,pt,百分比
