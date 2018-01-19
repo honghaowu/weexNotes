@@ -1,4 +1,7 @@
-## 通用样式
+
+## [1.通用样式](#1)
+## [2.文本样式](#2)
+## <h2 id="1">1.通用样式</h2>
 ### 盒模型
   1. padding margin要分写,如：padding-left/margin-left   
   2. boder写法：border-left-style,border-left-width,border-left-color  
@@ -34,3 +37,10 @@
   transition-duration:指定transition过渡的持续时间 
   transition-delay： 延迟时间  
   transition-timing-function： 过渡的曲线：
+### 伪类   
+  Weex 支持四种伪类：active, focus, disabled, enabled    
+  所有组件都支持 active, 但只有 input 组件和 textarea 组件支持 focus, enabled, disabled。
+### 线性渐变：  
+  background-image: linear-gradient(to top,#a80077,#66ff00)   
+  不支持 background 简写.
+## <h2 id="2">2.文本样式</h2>
