@@ -10,5 +10,15 @@
   **注意： Weex 对于长度值目前只支持像素值，不支持相对单位（em、rem）。    
         Weex 盒模型的 box-sizing 默认为 border-box，即盒子的宽高包含内容、内边距和边框的宽度，不包含外边距的宽度。**
 ### Flex布局
-  1. Flexbox 包含 flex 容器和 flex 成员项，在Weex 中，Flexbox 是默认且唯一的布局模型，所以你不需要手动为元素添加 display: flex; 属性。   
-  2. flex-direction主轴的排列方向，默认column,row/column;注意,在一般的前端flex布局中，默认是row.
+  Flexbox 包含 flex 容器和 flex 成员项，
+#### flex容器 
+  1. 在Weex 中，Flexbox 是默认且唯一的布局模型，所以你不需要手动为元素添加 display: flex; 属性。   
+  2. flex-direction主轴的排列方向，默认column,row/column;注意,在一般的前端flex布局中，默认是row.  
+  3. justify-content，flex成员项在主轴上的排列，flex-start:左对齐，flex-end:右对齐，enter:居中对齐，space-between：两端对齐，space-around:两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+  4. align-items属性定义项目在交叉轴上如何对齐：  
+     stretch：默认值，拉伸高度100%，与flex容器一样高  
+     flex-start:上对齐；  
+     flex-end: 下对齐，  
+     center：中间对齐。
+#### flex成员项
+  flex:1;平分空间
